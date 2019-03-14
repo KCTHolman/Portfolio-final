@@ -1,5 +1,5 @@
 var container = document.getElementsByClassName('container');
-var progressbar = document.getElementsByClassName('hardskill-html-bar')[0];
+var progressbar = document.getElementsByClassName('progressbar-animation');
 var checkScroller = false;
 console.log(container);
 
@@ -19,16 +19,19 @@ function moveLoadingBar(document) {
   console.log(window.scrollY);
   if (window.scrollY > container[1].getBoundingClientRect().y && checkScroller == false) {
     checkScroller = true;
-    progressbar.classList.add('hardskill-html-bar-transition');
+    progressbar[0].classList.add('hardskill-html-bar-transition');
+    progressbar[1].classList.add('hardskill-css-bar-transition');
+    progressbar[2].classList.add('hardskill-javascript-bar-transition');
+    progressbar[3].classList.add('softskill-teamwork-bar-transition');
+    progressbar[4].classList.add('softskill-problem-solving-bar-transition');
+    progressbar[5].classList.add('softskill-time-management-bar-transition');
+    progressbar[6].classList.add('softskill-flexibility-bar-transition');
+
     //console.log('im at that point')
   }
 }
-
 document.addEventListener('scroll', moveLoadingBar);
-///
 
-
-console.log(progressbar);
 
 
 // function objectInViewport1 () {

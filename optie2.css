@@ -313,9 +313,15 @@ width:60%
 
 .hardskill-css-bar{
     height:30px;
-    width: 55%;
+    width: 0%;
     background-color: #B0DEB8
 }
+
+.hardskill-css-bar-transition{
+    transition-property: width;
+    transition-duration: 2s;
+    width:55%
+    }
 
 .hardskill-javascript-bar{
     height:30px;
@@ -323,30 +329,61 @@ width:60%
     background-color: #B0DEB8
 }
 
+.hardskill-javascript-bar-transition{
+    transition-property: width;
+    transition-duration: 2s;
+    width:50%
+    }
+
 .softskill-teamwork-bar{
     height:30px;
-    width: 60%;
+    width: 0%;
     background-color: #B0DEB8
 }
+
+
+.softskill-teamwork-bar-transition{
+    transition-property: width;
+    transition-duration: 2s;
+    width:58%
+    }
 
 .softskill-problem-solving-bar{
     height:30px;
-    width: 55%;
+    width: 0%;
     background-color: #B0DEB8
 
 }
+
+.softskill-problem-solving-bar-transition{
+    transition-property: width;
+    transition-duration: 2s;
+    width:58%
+    }
 .softskill-time-management-bar{
     height:30px;
-    width: 45%;
+    width: 0%;
     background-color: #B0DEB8
 }
+
+.softskill-time-management-bar-transition{
+    transition-property: width;
+    transition-duration: 2s;
+    width:58%
+    }
 
 .softskill-flexibility-bar{
 
     height:30px;
-    width: 65%;
+    width: 0%;
     background-color: #B0DEB8
 }
+
+.softskill-flexibility-bar-transition{
+    transition-property: width;
+    transition-duration: 2s;
+    width:58%
+    }
 
 .empty-about{
     width: 100%;
