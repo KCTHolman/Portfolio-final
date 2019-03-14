@@ -1,29 +1,34 @@
 var container = document.getElementsByClassName('container');
+var progressbar = document.getElementsByClassName('hardskill-html-bar')[0];
 var checkScroller = false;
 console.log(container);
 
-console.log(container[0].getBoundingClientRect().y);
-console.log(container[1].getBoundingClientRect().y);
-console.log(container[2].getBoundingClientRect().y);
-console.log(container[3].getBoundingClientRect().y);
+// console.log(container[0].getBoundingClientRect().y);
+// console.log(container[1].getBoundingClientRect().y);
+// console.log(container[2].getBoundingClientRect().y);
+// console.log(container[3].getBoundingClientRect().y);
 
-document.addEventListener('click', GiveCurrentY);
+// document.addEventListener('click', GiveCurrentY);
 
 function GiveCurrentY() {
-  console.log(window.scrollY);
+  //console.log(window.scrollY);
 }
-console.log(window.scrollY);
+// console.log(window.scrollY);
 
 function moveLoadingBar(document) {
   console.log(window.scrollY);
   if (window.scrollY > container[1].getBoundingClientRect().y && checkScroller == false) {
     checkScroller = true;
-    console.log('im at that point')
+    progressbar.classList.add('hardskill-html-bar-transition');
+    //console.log('im at that point')
   }
 }
+
 document.addEventListener('scroll', moveLoadingBar);
+///
 
 
+console.log(progressbar);
 
 
 // function objectInViewport1 () {
